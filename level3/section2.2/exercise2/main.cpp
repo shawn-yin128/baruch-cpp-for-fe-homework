@@ -25,12 +25,19 @@ int main(void) {
   // print the coordinates by using get function
   cout << "Point has coordinates (" << p1.GetX() << ", " << p1.GetY() << ")" << endl;
   
-  // set the second point to (10, 20)
-  p2.SetX(10);
-  p2.SetY(20);
+  // ask user to input corrdinates for point2
+  double x2, y2;
+  cout << "Please enter x coordinate:\n";
+  cin >> x2;
+  cout << "Please enter y coordinate:\n";
+  cin >> y2;
+
+  // set the coordinates
+  p2.SetX(x2);
+  p2.SetY(y2);
 
   // calculate the distance 
   cout << "distance to origin is " << p1.DistanceOrigin() << endl;
-  cout << "distance to (10, 20) is " << p1.Distance(p2) << endl;
+  cout << "distance to " << p2.ToString() <<  "is " << p1.Distance(p2) << endl;
   return 0;
 }
