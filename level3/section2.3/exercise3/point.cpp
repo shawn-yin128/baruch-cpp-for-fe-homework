@@ -31,20 +31,20 @@ Point::~Point() {
 }
 
 // get functions
-double Point::GetX() {
+double Point::X() {
   return m_x;  
 }
 
-double Point::GetY() {
+double Point::Y() {
   return m_y;
 }
 
 // set functions
-void Point::SetX(double x) {
+void Point::X(double x) {
   m_x = x;
 }
 
-void Point::SetY(double y) {
+void Point::Y(double y) {
   m_y = y;
 }
 
@@ -56,10 +56,12 @@ string Point::ToString() {
 }
 
 // distance functions
-double Point::DistanceOrigin() {
+// distance with origin
+double Point::Distance() {
   return sqrt(pow(m_x, 2) + pow(m_y, 2));
 }
 
+// distance with other point
 double Point::Distance(const Point& p) {
   double x_dif, y_dif;
   x_dif = m_x - p.m_x;

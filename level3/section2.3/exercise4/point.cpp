@@ -31,36 +31,38 @@ Point::~Point() {
 }
 
 // get functions
-double Point::GetX() {
+double Point::X() const {
   return m_x;  
 }
 
-double Point::GetY() {
+double Point::Y() const {
   return m_y;
 }
 
 // set functions
-void Point::SetX(double x) {
+void Point::X(double x) {
   m_x = x;
 }
 
-void Point::SetY(double y) {
+void Point::Y(double y) {
   m_y = y;
 }
 
 // to string
-string Point::ToString() {
+string Point::ToString() const {
   stringstream stream;
   stream << "Point(" << m_x << ", " << m_y << ")";
   return stream.str();
 }
 
 // distance functions
-double Point::DistanceOrigin() {
+// distance with origin
+double Point::Distance() const {
   return sqrt(pow(m_x, 2) + pow(m_y, 2));
 }
 
-double Point::Distance(const Point& p) {
+// distance with other point
+double Point::Distance(const Point& p) const {
   double x_dif, y_dif;
   x_dif = m_x - p.m_x;
   y_dif = m_y - p.m_y;

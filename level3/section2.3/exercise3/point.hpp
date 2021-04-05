@@ -17,15 +17,15 @@ class Point {
     // destructor
     ~Point();
     // get functions
-    double GetX();
-    double GetY();
+    double X();
+    double Y();
     // set functions
-    void SetX(double x);
-    void SetY(double y);
+    void X(double x);
+    void Y(double y);
     // convert to string
     string ToString();
     // distance functions
-    double DistanceOrigin();
+    double Distance();
     double Distance(const Point& p);
   private:
     double m_x;
