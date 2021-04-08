@@ -27,11 +27,11 @@ Line::~Line() {
 }
 
 // get functions
-Point Line::P1() const {
+const Point& Line::P1() const {
   return p1;
 }
 
-Point Line::P2() const {
+const Point& Line::P2() const {
   return p2;
 }
 

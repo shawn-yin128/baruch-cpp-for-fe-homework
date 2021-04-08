@@ -20,8 +20,8 @@ class Line {
     ~Line(); 
 
     // get functions
-    Point P1() const; // get start point
-    Point P2() const; // get end point
+    const Point& P1() const; // get start point
+    const Point& P2() const; // get end point
     
     // set functions
     void P1(const Point &p); // set start point
