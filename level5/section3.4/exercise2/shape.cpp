@@ -8,7 +8,7 @@
 using namespace std;
 
 // constructor
-Shape::Shape() : m_id(10) {
+Shape::Shape() : m_id(rand()) {
 }
 
 Shape::Shape(const Shape& shape) : m_id(shape.m_id) {

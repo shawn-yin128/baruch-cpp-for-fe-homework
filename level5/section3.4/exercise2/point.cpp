@@ -22,7 +22,6 @@ Point::Point(double num) : m_x(num), m_y(num) {
 
 // destructor
 Point::~Point() {
-  cout << "Destructor called." << endl;
 }
 
 // to string

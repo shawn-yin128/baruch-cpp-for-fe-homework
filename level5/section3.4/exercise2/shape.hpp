@@ -14,7 +14,7 @@ class Shape {
         Shape(const Shape& shape); // copy constructor
 
         // destructor
-        ~Shape(); // destructor
+        virtual ~Shape(); // use virtual, without virtual, delete bass pointer will not delete a derived object
 
         // assignment operator
         Shape& operator = (const Shape& shape);
