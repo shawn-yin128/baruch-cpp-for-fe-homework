@@ -1,5 +1,10 @@
 // implement of line class
 
+// use namespace xxx {
+//  namespace xx {
+//  } 
+// } instead of format in this cpp
+
 #include <iostream>
 #include <string>
 #include <sstream>

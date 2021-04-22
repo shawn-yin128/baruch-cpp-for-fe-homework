@@ -1,5 +1,10 @@
 // source file of array class
 
+// use namespace xxx {
+//  namespace xx {
+//  } 
+// } instead of format in this cpp
+
 #include "array.hpp"
 #include "point.hpp"
 #include <iostream>

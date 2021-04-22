@@ -1,5 +1,10 @@
 // implement circle class
 
+// use namespace xxx {
+//  namespace xx {
+//  } 
+// } instead of format in this cpp
+
 #define _USE_MATH_DEFINES
 #include <cmath>
 #include <sstream>

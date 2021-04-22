@@ -1,5 +1,10 @@
 // implement the point class
 
+// use namespace xxx {
+//  namespace xx {
+//  } 
+// } instead of format in this cpp
+
 #include <iostream>
 #include <sstream>
 #include <string>
