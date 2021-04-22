@@ -10,15 +10,12 @@ using namespace std;
 
 // constructor
 Line::Line() : p1(0, 0), p2(0, 0) {
-  cout << "Default constructor called." << endl;
 }
 
 Line::Line(const Point &p_start, const Point &p_end) : p1(p_start), p2(p_end) {
-  cout << "Constructor with two input values called." << endl;
 }
 
 Line::Line(const Line &l) : p1(l.p1), p2(l.p2) {
-  cout << "Copy constructor called." << endl;
 }
 
 // destructor
@@ -57,6 +54,9 @@ string Line::ToString() const {
 
 // assignment operator
 Line& Line::operator = (const Line& l) {
+  if (this == &l) {
+    return *this;
+  }
   p1 = l.p1;
   p2 = l.p2;
   return *this;

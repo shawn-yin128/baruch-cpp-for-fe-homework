@@ -58,6 +58,9 @@ using namespace std;
 
     // assignment operator
     mynamespace::CAD::Line& mynamespace::CAD::Line::operator = (const Line& l) {
+      if (this == &l) {
+        return *this;
+      }
       p1 = l.p1;
       p2 = l.p2;
       return *this;

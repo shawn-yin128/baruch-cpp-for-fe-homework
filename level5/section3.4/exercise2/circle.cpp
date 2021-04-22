@@ -10,15 +10,12 @@ using namespace std;
 
 // constructrs
 Circle::Circle() : m_center(0, 0), m_radius(0) {
-  cout << "Default constructor called." << endl;
 }
 
 Circle::Circle(const Point &p, double radius) : m_center(p), m_radius(radius) {
-  cout << "Constructor with two input values called." << endl;
 }
 
 Circle::Circle(const Circle &cir) : m_center(cir.m_center), m_radius(cir.m_radius) {
-  cout << "Copy constructor called." << endl;
 }
 
 // destructor
@@ -64,6 +61,9 @@ string Circle::ToString() const {
 
 // assignment operator
 Circle& Circle::operator = (const Circle& c) {
+  if (this == &c) {
+    return *this;
+  }
   m_center = c.m_center;
   m_radius = c.m_radius;
   return *this;

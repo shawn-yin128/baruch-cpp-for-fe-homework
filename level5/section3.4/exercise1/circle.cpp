@@ -64,6 +64,9 @@ string Circle::ToString() const {
 
 // assignment operator
 Circle& Circle::operator = (const Circle& c) {
+  if (this == &c) {
+    return *this;
+  }
   m_center = c.m_center;
   m_radius = c.m_radius;
   return *this;

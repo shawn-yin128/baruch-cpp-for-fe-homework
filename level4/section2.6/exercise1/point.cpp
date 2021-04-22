@@ -74,6 +74,9 @@ using namespace std;
     }
 
     mynamespace::CAD::Point& mynamespace::CAD::Point::operator = (const Point& p) { // assignment operator
+      if (this == &p) {
+        return *this;
+      }
       m_x = p.m_x;
       m_y = p.m_y;
       return *this;

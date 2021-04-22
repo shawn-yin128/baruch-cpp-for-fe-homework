@@ -3,12 +3,13 @@
 #ifndef _Point_HPP
 #define _Point_HPP
 
+#include "shape.hpp"
 #include <iostream>
 #include <string>
 #include <cmath>
 using namespace std;
 
-class Point {
+class Point : public Shape {
   public:
     // constructor
     Point();

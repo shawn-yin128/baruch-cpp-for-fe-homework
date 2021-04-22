@@ -6,10 +6,11 @@
 #include <iostream>
 #include <string>
 #include "point.hpp"
+#include "shape.hpp"
 
 using namespace std;
 
-class Circle {
+class Circle : public Shape {
   public:
     // constructor
     Circle(); // default

@@ -46,7 +46,7 @@ Array& Array::operator = (const Array& arr) {
 }
 
 Point& Array::operator [] (int idx) {
-    if (idx >= m_size) {
+    if (idx >= m_size | idx < 0) {
         cout << "index out of range." << endl;
         return m_data[0];
     }
@@ -54,7 +54,7 @@ Point& Array::operator [] (int idx) {
 }
 
 const Point& Array::operator [] (int idx) const {
-    if (idx >= m_size) {
+    if (idx >= m_size | idx < 0) {
         cout << "index out of range." << endl;
         return m_data[0];
     }
@@ -67,7 +67,7 @@ int Array::Size() const {
 }
 
 Point& Array::GetElement(int idx) const {
-    if (idx >= m_size) {
+    if (idx >= m_size | idx < 0) {
         cout << "index out of range." << endl;
         return m_data[0];
     }
@@ -76,7 +76,7 @@ Point& Array::GetElement(int idx) const {
 
 // modifier
 void Array::SetElement(int idx, const Point& p) {
-    if (idx >= m_size) {
+    if (idx >= m_size | idx < 0) {
         cout << "index out of range." << endl;
         return;
     }

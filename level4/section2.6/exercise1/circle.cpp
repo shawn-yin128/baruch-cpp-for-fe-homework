@@ -65,6 +65,9 @@ using namespace std;
 
     // assignment operator
     mynamespace::CAD::Circle& mynamespace::CAD::Circle::operator = (const Circle& c) {
+      if (this == &c) {
+        return *this;
+      }
       m_center = c.m_center;
       m_radius = c.m_radius;
       return *this;

@@ -9,19 +9,15 @@ using namespace std;
 
 // constructor
 Point::Point() : m_x(0.0), m_y(0.0) {
-  cout << "Default constructor called." << endl;
 }
 
 Point::Point(const Point &p) : m_x(p.m_x), m_y(p.m_y) {
-  cout << "Copy constructor called." << endl;
 }
 
 Point::Point(double x, double y) : m_x(x), m_y(y) {
-  cout << "Constructor with two input values called." << endl;
 }
 
 Point::Point(double num) : m_x(num), m_y(num) {
-  cout << "Constructor with one input value called." << endl;
 }
 
 // destructor
@@ -73,6 +69,9 @@ bool Point::operator == (const Point& p) const { // compare coordinates
 }
 
 Point& Point::operator = (const Point& p) { // assignment operator
+  if (this == &p) {
+    return *this;
+  }
   m_x = p.m_x;
   m_y = p.m_y;
   return *this;

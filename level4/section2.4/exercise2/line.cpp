@@ -58,6 +58,9 @@ string Line::ToString() const {
 
 // assignment operator
 Line& Line::operator = (const Line& l) {
+  if (this == &l) {
+    return *this;
+  }
   p1 = l.p1;
   p2 = l.p2;
   return *this;

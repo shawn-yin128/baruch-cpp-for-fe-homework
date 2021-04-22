@@ -46,7 +46,7 @@ using namespace std;
         }
 
         mynamespace::CAD::Point& mynamespace::Containers::Array::operator [] (int idx) {
-            if (idx >= m_size) {
+            if (idx >= m_size | idx < 0) {
                 cout << "index out of range." << endl;
                 return m_data[0];
             }
@@ -54,7 +54,7 @@ using namespace std;
         }
 
         const mynamespace::CAD::Point& mynamespace::Containers::Array::operator [] (int idx) const {
-            if (idx >= m_size) {
+            if (idx >= m_size | idx < 0) {
                 cout << "index out of range." << endl;
                 return m_data[0];
             }
@@ -67,7 +67,7 @@ using namespace std;
         }
 
         mynamespace::CAD::Point& mynamespace::Containers::Array::GetElement(int idx) const {
-            if (idx >= m_size) {
+            if (idx >= m_size | idx < 0) {
                 cout << "index out of range." << endl;
                 return m_data[0];
             }
@@ -76,7 +76,7 @@ using namespace std;
 
         // modifier
         void mynamespace::Containers::Array::SetElement(int idx, const mynamespace::CAD::Point& p) {
-            if (idx >= m_size) {
+            if (idx >= m_size | idx < 0) {
                 cout << "index out of range." << endl;
                 return;
             }
