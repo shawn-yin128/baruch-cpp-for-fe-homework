@@ -20,7 +20,7 @@ class Shape {
         Shape& operator = (const Shape& shape);
 
         // string operation
-        string ToString() const;
+        virtual string ToString() const; // make this a virtual function
         
         // accessor 
         int ID() const; // 
