@@ -1,7 +1,7 @@
 // source file of array class
 
-#ifndef _Array_CPP
-#define _Array_CPP
+#ifndef _Array_CPP_
+#define _Array_CPP_
 
 #include "array.hpp"
 #include "outofboundsexception.hpp"
@@ -9,9 +9,12 @@
 
 using namespace std;
 
+template <class T>
+int Array<T>::default_size = 10; // set default size
+
 // constructor
 template <class T>
-Array<T>::Array() : m_data(new T[10]), m_size(10) { // default to create an array with 10 point
+Array<T>::Array() : m_data(new T[default_size]), m_size(default_size) { // default to create an array with 10 point
 }
 
 template <class T>
@@ -84,6 +87,18 @@ void Array<T>::SetElement(int idx, const T& p) {
         throw OutOfBoundsException(idx);
     }
     m_data[idx] = p;
+}
+
+// static get
+template <class T>
+int Array<T>::DefaultSize() {
+    return default_size;
+}
+
+// static set
+template <class T>
+void Array<T>::DefaultSize(int size) {
+    default_size = size;
 }
 
 #endif
