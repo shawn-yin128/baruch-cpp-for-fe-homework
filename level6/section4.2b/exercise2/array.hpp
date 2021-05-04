@@ -37,7 +37,6 @@ class Array {
 		const T& operator [] (int index) const;			
 };
 
-
 #ifndef Array_CPP 
 #include "array.cpp"
 #endif
