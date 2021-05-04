@@ -1,7 +1,7 @@
 #ifndef NumericArray_CPP
 #define NumericArray_CPP
 
-#include "NumericArray.hpp"
+#include "numeric_array.hpp"
 #include "ArrayException.hpp"
 #include <iostream>
 

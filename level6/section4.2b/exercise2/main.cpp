@@ -1,5 +1,5 @@
 #include "array.hpp"
-#include "NumericArray.hpp"
+#include "numeric_array.hpp"
 #include "ArrayException.hpp"
 #include <iostream>
 

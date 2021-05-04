@@ -26,7 +26,7 @@ class NumericArray : public Array<T> {
 };
 
 #ifndef NumericArray_CPP 
-#include "NumericArray.cpp"
+#include "numeric_array.cpp"
 #endif
 
 #endif 
