@@ -2,7 +2,7 @@
 #define NumericArray_CPP
 
 #include "numeric_array.hpp"
-#include "ArrayException.hpp"
+#include "array_exception.hpp"
 #include <iostream>
 
 using namespace std;

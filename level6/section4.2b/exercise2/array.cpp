@@ -2,7 +2,7 @@
 #define Array_CPP
 
 #include "array.hpp"
-#include "ArrayException.hpp"
+#include "array_exception.hpp"
 #include <sstream>
 #include <cmath>
 #include <iostream>
