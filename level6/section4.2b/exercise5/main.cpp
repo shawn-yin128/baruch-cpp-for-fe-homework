@@ -1,5 +1,5 @@
 #include "stack.hpp"
-#include "array_exception.hpp"
+#include "stack_exception.hpp"
 #include <iostream>
 
 using namespace std;
@@ -15,7 +15,7 @@ int main(void) {
             stack4.Push(i);
         }
     }
-    catch (ArrayException& ex) {
+    catch (StackException& ex) {
         cout << ex.GetMessage();
     }
 
@@ -28,7 +28,7 @@ int main(void) {
             cout << stack5.Pop() << endl; // test pop exception
         }
     }
-    catch (ArrayException& ex) {
+    catch (StackException& ex) {
         cout << ex.GetMessage();
     }
 
