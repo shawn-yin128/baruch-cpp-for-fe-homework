@@ -51,7 +51,8 @@ T Stack<T>::Pop() {
         return m_array[--m_current];
     }
     catch (ArrayException& ex) {
-        
+        m_current = 0;
+        throw StackEmptyException();
     }
 }
 
