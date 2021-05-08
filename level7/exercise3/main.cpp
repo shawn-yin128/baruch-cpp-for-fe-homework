@@ -12,8 +12,7 @@ int Compare(double input) {
 
 int main(void) {
 	vector<int> vector1;
-	for (int i = 0; i < 20; i++)
-	{
+	for (int i = 0; i < 20; i++) {
 		vector1.push_back(i);
 	}
 
